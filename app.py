@@ -8,4 +8,4 @@ def home():
     return '''<h1>MIAW CRLH </h1>
 <p>Nou é senho nourisin gui</p>'''
 
-app.run(port=8080)
+app.run(port=8080,ip="0.0.0.0")
