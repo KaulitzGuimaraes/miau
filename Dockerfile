@@ -1,6 +1,6 @@
 FROM python:latest
-RUN mkdir aulascria
+VOLUME /aulascria
 COPY . ./aulascria
-RUN cd aulascria
+WORKDIR /aulascria
 RUN pip install -r requirements.txt
 CMD python ./app.py
